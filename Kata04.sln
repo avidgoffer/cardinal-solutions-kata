@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata04.Core", "Kata04.Core\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata04.Data", "Kata04.Data\Kata04.Data.csproj", "{3EB060F9-94AD-4A47-83BB-CF6AE9C687DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata04.UI", "Kata04.UI\Kata04.UI.csproj", "{B785F6E3-28E6-43EB-B9DC-DDDECF67335A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3EB060F9-94AD-4A47-83BB-CF6AE9C687DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EB060F9-94AD-4A47-83BB-CF6AE9C687DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EB060F9-94AD-4A47-83BB-CF6AE9C687DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B785F6E3-28E6-43EB-B9DC-DDDECF67335A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B785F6E3-28E6-43EB-B9DC-DDDECF67335A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B785F6E3-28E6-43EB-B9DC-DDDECF67335A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B785F6E3-28E6-43EB-B9DC-DDDECF67335A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

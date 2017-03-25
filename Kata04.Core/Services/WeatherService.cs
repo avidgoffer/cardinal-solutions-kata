@@ -1,11 +1,6 @@
-﻿using Kata04.Data;
-using Kata04.Data.Entities;
-using System;
+﻿using Kata04.Data.Entities;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Kata04.Core.Services
 {
