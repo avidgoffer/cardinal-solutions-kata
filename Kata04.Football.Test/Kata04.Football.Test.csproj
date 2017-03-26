@@ -48,11 +48,21 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="FootballServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kata04.Football.Core\Kata04.Football.Core.csproj">
+      <Project>{F3D8E775-4E1B-472B-98B9-DABED0197DC7}</Project>
+      <Name>Kata04.Football.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kata04.Football.Data\Kata04.Football.Data.csproj">
+      <Project>{10E0F267-4659-45E5-8736-FFCCDDA40DA4}</Project>
+      <Name>Kata04.Football.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

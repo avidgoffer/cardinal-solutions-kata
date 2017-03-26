@@ -1,5 +1,7 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Kata04.Football.Core.Services;
+using Kata04.Football.Data.Entities;
+using System.Collections.Generic;
 
 namespace Kata04.Football.Test
 {
@@ -13,22 +15,22 @@ namespace Kata04.Football.Test
                 {
                     new FootballStat
                     {
-                        Team="Team 1",
-                        For=50,
-                        Against=40
+                        TeamName="Team 1",
+                        GoalsFor=50,
+                        GoalsAgainst=40
                     },
                     new FootballStat
                     {
-                        Team="Team 2",
-                        For=50,
-                        Against=45
+                        TeamName="Team 2",
+                        GoalsFor=50,
+                        GoalsAgainst=45
                     }
                 });
             var footballStat = footballService.GetTeamWithSmallestScoringDifference();
 
-            const int expectedTeam = "Team 2";
+            const string expectedTeam = "Team 2";
             Assert.IsNotNull(footballStat);
-            Assert.AreEqual(expectedTeam, footballStat.Team);
+            Assert.AreEqual(expectedTeam, footballStat.TeamName);
         }
     }
 }
