@@ -24,11 +24,23 @@ namespace Kata04.Football.Test
                         TeamName="Team 2",
                         GoalsFor=50,
                         GoalsAgainst=45
+                    },
+                    new FootballStat
+                    {
+                        TeamName="Team 3",
+                        GoalsFor=40,
+                        GoalsAgainst=44
+                    },
+                    new FootballStat
+                    {
+                        TeamName="Team 4",
+                        GoalsFor=45,
+                        GoalsAgainst=30
                     }
                 });
             var footballStat = footballService.GetTeamWithSmallestScoringDifference();
 
-            const string expectedTeam = "Team 2";
+            const string expectedTeam = "Team 3";
             Assert.IsNotNull(footballStat);
             Assert.AreEqual(expectedTeam, footballStat.TeamName);
         }
