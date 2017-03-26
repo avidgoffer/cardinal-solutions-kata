@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata04.Football.Core", "Kat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata04.Football.Data", "Kata04.Football.Data\Kata04.Football.Data.csproj", "{10E0F267-4659-45E5-8736-FFCCDDA40DA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata04.Football.UI", "Kata04.Football.UI\Kata04.Football.UI.csproj", "{B41F1DA0-D67F-40BA-80A5-0224F545380F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{10E0F267-4659-45E5-8736-FFCCDDA40DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10E0F267-4659-45E5-8736-FFCCDDA40DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10E0F267-4659-45E5-8736-FFCCDDA40DA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B41F1DA0-D67F-40BA-80A5-0224F545380F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B41F1DA0-D67F-40BA-80A5-0224F545380F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B41F1DA0-D67F-40BA-80A5-0224F545380F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B41F1DA0-D67F-40BA-80A5-0224F545380F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
