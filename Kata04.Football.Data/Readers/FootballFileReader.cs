@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 using Kata04.Football.Data.Entities;
+using Kata04.Generic.Data.Readers;
 
 namespace Kata04.Data.Readers
 {
@@ -8,32 +8,27 @@ namespace Kata04.Data.Readers
     {
         private readonly string _pathToData;
 
-        // is this the best way to do this.  i wanted to enale a way to read the day agnostically
+        // is this the best way to do this.  i wanted to enale a way to read the data agnostically
         public FootballFileReader(string pathToData)
         {
             _pathToData = pathToData;
         }
 
-        public IList<FootballStat> GetAll()
+        public IEnumerable<FootballStat> GetAll()
         {
-            // todo implement caching maybe?
-            // todo recoginize when file changes?
-            string[] data = File.ReadAllLines(_pathToData);
-            var footballData = new List<FootballStat>();
-            for (int i = 0; i < data.Length; ++i)
+            return new FileReader<FootballStat>().GetAll(_pathToData, x =>
             {
                 int goalsFor = -1;
-                if(!int.TryParse(data[i].Substring(42, 3), out goalsFor)) continue;
+                if (!int.TryParse(x.Substring(42, 3), out goalsFor)) return null;
                 int goalsAgainst = -1;
-                if(!int.TryParse(data[i].Substring(49, 3), out goalsAgainst)) continue;
-                footballData.Add(new FootballStat
+                if (!int.TryParse(x.Substring(49, 3), out goalsAgainst)) return null;
+                return new FootballStat
                 {
-                    TeamName = data[i].Substring(7,15),
+                    TeamName = x.Substring(7, 15),
                     GoalsFor = goalsFor,
                     GoalsAgainst = goalsAgainst
-                });
-            }
-            return footballData;
+                };
+            });
         }
     }
 }

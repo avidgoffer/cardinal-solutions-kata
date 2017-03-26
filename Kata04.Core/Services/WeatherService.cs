@@ -6,9 +6,9 @@ namespace Kata04.Core.Services
 {
     public class WeatherService
     {
-        private IList<WeatherDay> _weatherData;
+        private IEnumerable<WeatherDay> _weatherData;
 
-        public WeatherService(IList<WeatherDay> weatherData)
+        public WeatherService(IEnumerable<WeatherDay> weatherData)
         {
             _weatherData = weatherData;
         }

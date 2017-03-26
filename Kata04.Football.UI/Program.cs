@@ -27,8 +27,8 @@ namespace Kata04.Football.UI
                 return;
             }
 
-            var weatherData = new FootballFileReader(pathToData).GetAll();
-            var teamWithSmallestScoreDifference = new FootballService(weatherData).GetTeamWithSmallestScoringDifference();
+            var footballData = new FootballFileReader(pathToData).GetAll();
+            var teamWithSmallestScoreDifference = new FootballService(footballData).GetTeamWithSmallestScoringDifference();
             Console.WriteLine($"The team with the samllest score difference is: {teamWithSmallestScoreDifference.TeamName}");
 
             Console.ReadKey();

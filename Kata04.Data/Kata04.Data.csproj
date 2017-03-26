@@ -45,5 +45,11 @@
     <Compile Include="Readers\IWeatherReader.cs" />
     <Compile Include="Readers\WeatherFileReader.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kata04.Generic.Data\Kata04.Generic.Data.csproj">
+      <Project>{3A3FFF03-1765-4D0E-853A-0F7144D31165}</Project>
+      <Name>Kata04.Generic.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

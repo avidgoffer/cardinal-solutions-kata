@@ -7,9 +7,9 @@ namespace Kata04.Football.Core.Services
 {
     public class FootballService
     {
-        private IList<FootballStat> _footballStats;
+        private IEnumerable<FootballStat> _footballStats;
 
-        public FootballService(IList<FootballStat> footballStats)
+        public FootballService(IEnumerable<FootballStat> footballStats)
         {
             _footballStats = footballStats;
         }
